@@ -41,4 +41,46 @@ class Length:
         """Convert Miles to Kilometers."""
         return miles / 0.621371
 
+class Time:
+    @staticmethod
+    def hours_to_minutes(hours: float) -> float:
+        """Convert Hours to Minutes."""
+        pass
+
+    @staticmethod
+    def minutes_to_hours(minutes: float) -> float:
+        """Convert Minutes to Hours."""
+        pass
+
+    @staticmethod
+    def seconds_to_minutes(seconds: float) -> float:
+        """Convert Seconds to Minutes."""
+        pass
+
+    @staticmethod
+    def minutes_to_seconds(minutes: float) -> float:
+        """Convert Minutes to Seconds."""
+        pass
+
+
+class Mass:
+    @staticmethod
+    def kilograms_to_pounds(kg: float) -> float:
+        """Convert Kilograms to Pounds."""
+        pass
+
+    @staticmethod
+    def pounds_to_kilograms(pounds: float) -> float:
+        """Convert Pounds to Kilograms."""
+        pass
+
+    @staticmethod
+    def grams_to_ounces(grams: float) -> float:
+        """Convert Grams to Ounces."""
+        pass
+
+    @staticmethod
+    def ounces_to_grams(ounces: float) -> float:
+        """Convert Ounces to Grams."""
+        pass
 
