@@ -13,7 +13,6 @@
 4. Write **clear commit messages** describing your changes.  
 
 
-
 ## General Instructions
 
 - Use the CLI menu in `App.py` for testing your functions.  
