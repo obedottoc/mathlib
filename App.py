@@ -1,5 +1,5 @@
 # === Import modules ===
-from Conversions import Temperature, Length
+from Conversions import Temperature, Length, Time, Mass
 from Volume import Volume
 # Other modules would be imported similarly
 
