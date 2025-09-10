@@ -1,18 +1,33 @@
+from math import pi,pow;
+
 class Volume:
-    def Sphere(self):
-        pass
+    @staticmethod
+    def sphere(radius):
+        """Returns Volume of Sphere"""
+        return (4 * pi * pow(radius,3))/3
 
-    def Cylinder(self):
-        pass
 
-    def Cone(self):
-        pass
+    @staticmethod
+    def cylinder(radius,height):
+        """Returns Volume of Cylinder"""
+        return pi*(radius * radius )*height
 
-    def Cube(self,a):
+    @staticmethod
+    def cone(radius,height):
+        """Returns Volume of Cone"""
+        return pi*(radius * radius )*height/3
+
+    @staticmethod
+    def cube(a):
+        """Returns Volume of Cube"""
         return a**3
 
-    def Cuboid(self,length,breadth,height):
+    @staticmethod
+    def cuboid(length,breadth,height):
+        """Returns Volume of Cuboid"""
         return length*breadth*height
     
-    def Hemisphere(self,radius):
+    @staticmethod
+    def hemisphere(radius):
+        """Returns Volume of Hemisphere"""
         return (2/3)*(22/7)*(radius**3)
