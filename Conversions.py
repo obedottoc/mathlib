@@ -45,42 +45,41 @@ class Time:
     @staticmethod
     def hours_to_minutes(hours: float) -> float:
         """Convert Hours to Minutes."""
-        pass
+        return hours * 60
 
     @staticmethod
     def minutes_to_hours(minutes: float) -> float:
         """Convert Minutes to Hours."""
-        pass
+        return minutes / 60
 
     @staticmethod
     def seconds_to_minutes(seconds: float) -> float:
         """Convert Seconds to Minutes."""
-        pass
+        return seconds / 60
 
     @staticmethod
     def minutes_to_seconds(minutes: float) -> float:
         """Convert Minutes to Seconds."""
-        pass
+        return minutes * 60
 
 
 class Mass:
     @staticmethod
     def kilograms_to_pounds(kg: float) -> float:
         """Convert Kilograms to Pounds."""
-        pass
+        return kg * 2.20462
 
     @staticmethod
     def pounds_to_kilograms(pounds: float) -> float:
         """Convert Pounds to Kilograms."""
-        pass
+        return pounds / 2.20462
 
     @staticmethod
     def grams_to_ounces(grams: float) -> float:
         """Convert Grams to Ounces."""
-        pass
+        return grams / 28.3495
 
     @staticmethod
     def ounces_to_grams(ounces: float) -> float:
         """Convert Ounces to Grams."""
-        pass
-
+        return ounces * 28.3495

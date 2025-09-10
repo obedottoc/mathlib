@@ -17,7 +17,9 @@ def conversions_menu():
         print("\n--- Conversions ---")
         print("1. Temperature Conversions")
         print("2. Length Conversions")
-        print("3. Back to Main Menu")
+        print("3. Time Conversions")
+        print("4. Mass Conversions")
+        print("5. Back to Main Menu")
 
         choice = input("Enter your choice: ")
 
@@ -72,6 +74,56 @@ def conversions_menu():
                 print("Invalid choice!")
 
         elif choice == "3":
+            print("\n--- Time Conversions ---")
+            print("1. Hours to Minutes")
+            print("2. Minutes to Hours")
+            print("3. Seconds to Minutes")
+            print("4. Minutes to Seconds")
+            print("5. Back")
+            sub = input("Enter your choice: ")
+            if sub == "1":
+                h = float(input("Enter Hours: "))
+                print("Minutes:", Time.hours_to_minutes(h))
+            elif sub == "2":
+                m = float(input("Enter Minutes: "))
+                print("Hours:", Time.minutes_to_hours(m))
+            elif sub == "3":
+                s = float(input("Enter Seconds: "))
+                print("Minutes:", Time.seconds_to_minutes(s))
+            elif sub == "4":
+                m = float(input("Enter Minutes: "))
+                print("Seconds:", Time.minutes_to_seconds(m))
+            elif sub == "5":
+                continue
+            else:
+                print("Invalid choice!")
+
+        elif choice == "4":
+            print("\n--- Mass Conversions ---")
+            print("1. Kilograms to Pounds")
+            print("2. Pounds to Kilograms")
+            print("3. Grams to Ounces")
+            print("4. Ounces to Grams")
+            print("5. Back")
+            sub = input("Enter your choice: ")
+            if sub == "1":
+                kg = float(input("Enter Kilograms: "))
+                print("Pounds:", Mass.kilograms_to_pounds(kg))
+            elif sub == "2":
+                p = float(input("Enter Pounds: "))
+                print("Kilograms:", Mass.pounds_to_kilograms(p))
+            elif sub == "3":
+                g = float(input("Enter Grams: "))
+                print("Ounces:", Mass.grams_to_ounces(g))
+            elif sub == "4":
+                o = float(input("Enter Ounces: "))
+                print("Grams:", Mass.ounces_to_grams(o))
+            elif sub == "5":
+                continue
+            else:
+                print("Invalid choice!")
+
+        elif choice == "5":
             break
         else:
             print("Invalid choice!")
