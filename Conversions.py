@@ -19,3 +19,26 @@ class Temperature:
         """Convert Kelvin to Celsius."""
         return kelvin - 273.15
 
+
+class Length:
+    @staticmethod
+    def meters_to_feet(meters: float) -> float:
+        """Convert Meters to Feet."""
+        return meters * 3.281
+
+    @staticmethod
+    def feet_to_meters(feet: float) -> float:
+        """Convert Feet to Meters."""
+        return feet / 3.281
+
+    @staticmethod
+    def kilometers_to_miles(km: float) -> float:
+        """Convert Kilometers to Miles."""
+        return km * 0.621371
+
+    @staticmethod
+    def miles_to_kilometers(miles: float) -> float:
+        """Convert Miles to Kilometers."""
+        return miles / 0.621371
+
+
