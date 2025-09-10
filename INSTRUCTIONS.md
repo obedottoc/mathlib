@@ -17,6 +17,6 @@
 ## General Instructions
 
 - Use the CLI menu in `App.py` for testing your functions.  
-- Do not modify other contributors' modules without discussion.  
-- Keep your code **simple and readable**.  
+- Do not modify other contributors' modules without discussion.
+- Add your contribution in the assigned file (Ex : `Area.py`) and then add the functionality in the `App.py` for CLI.  
 
