@@ -1,3 +1,5 @@
+import math 
+
 class Statistics:
     @staticmethod
     def mean(data):

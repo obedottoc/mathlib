@@ -1,6 +1,7 @@
 # === Import modules ===
 from Conversions import Temperature, Length, Time, Mass
 from Volume import Volume
+from Vector import Vector
 # Other modules would be imported similarly
 
 
@@ -154,10 +155,52 @@ def trignometry_menu():
 
 
 def vector_menu():
-    print("\n--- Vector Operations ---")
-    # Placeholder
-    pass
+    while True:
+        print("\n--- Vector Operations ---")
+        print("1. Vector Addition")
+        print("2. Vector Subtraction")
+        print("3. Scalar Multiplication")
+        print("4. Scalar Division")
+        print("5. Dot Product")
+        print("6. Cross Product")
+        print("7. Back")
 
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            v1 = list(map(float, input("Enter first vector (same dimension, space-separated): ").split()))
+            v2 = list(map(float, input("Enter second vector (same dimension, space-separated): ").split()))
+            print("Result:", Vector.vector_addition(v1, v2))
+
+        elif choice == "2":
+            v1 = list(map(float, input("Enter first vector (same dimension, space-separated): ").split()))
+            v2 = list(map(float, input("Enter second vector (same dimension, space-separated): ").split()))
+            print("Result:", Vector.vector_subtraction(v1, v2))
+
+        elif choice == "3":
+            v = list(map(float, input("Enter vector (space-separated): ").split()))
+            scalar = float(input("Enter scalar: "))
+            print("Result:", Vector.scalar_multiplication(v, scalar))
+
+        elif choice == "4":
+            v = list(map(float, input("Enter vector (space-separated): ").split()))
+            scalar = float(input("Enter scalar: "))
+            print("Result:", Vector.scalar_division(v, scalar))
+
+        elif choice == "5":
+            v1 = list(map(float, input("Enter first vector (same dimension, space-separated): ").split()))
+            v2 = list(map(float, input("Enter second vector (same dimension, space-separated): ").split()))
+            print("Dot Product:", Vector.dot_product(v1, v2))
+
+        elif choice == "6":
+            v1 = list(map(float, input("Enter first 3D vector (space-separated): ").split()))
+            v2 = list(map(float, input("Enter second 3D vector (space-separated): ").split()))
+            print("Cross Product:", Vector.cross_product(v1, v2))
+
+        elif choice == "7":
+            break
+        else:
+            print("Invalid choice!")
 
 def volume_menu():
     while True:
